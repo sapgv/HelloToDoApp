@@ -104,16 +104,6 @@ final class TaskListViewController: UIViewController, UITableViewDataSource, UIT
         
     }
     
-    //MARK: - Save
-    
-    private func save(task: Task) {
-        
-        try? self.storage.save(task: task)
-        
-        self.updateData()
-        
-    }
-    
     //MARK: - Update
     
     private func updateData() {
